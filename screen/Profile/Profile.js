@@ -3,14 +3,15 @@ import { StyleSheet, View, Text } from "react-native";
 
 const Profile = () => {
   return (
-    <View>
+    
+    <SafeAreaView>
       <Text>Profile</Text>
       <Text>Profile</Text>
       <Text>Profile</Text>
       <Text>Profile</Text>
       <Text>Profile</Text>
       <Text>Profile</Text>
-    </View>
+    </SafeAreaView>
   );
 };
 
