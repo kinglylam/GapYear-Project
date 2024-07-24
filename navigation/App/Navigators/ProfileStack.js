@@ -1,5 +1,6 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import React from "react";
+import UserInfo from "../../../screen/Profile/UserInfo";
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -9,6 +10,8 @@ export default function ProfileNavigator() {
       screenOptions={{
         headerShown: false,
       }}
-    ></Navigator>
+    >
+      <Screen name="personal-info" component={UserInfo} />
+    </Navigator>
   );
 }
