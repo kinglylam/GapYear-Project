@@ -1,3 +1,5 @@
+/** @format */
+
 import React from "react";
 import { StyleSheet, View, Text, SafeAreaView } from "react-native";
 import Header from "../../components/Header";
@@ -16,6 +18,8 @@ const UserInfo = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     marginHorizontal: 10,
+    flex: 1,
+    paddingTop: Platform.OS === "android" ? 25 : 0,
   },
 });
 

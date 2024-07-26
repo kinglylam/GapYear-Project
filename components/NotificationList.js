@@ -1,10 +1,10 @@
 /** @format */
 
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import React from "react";
-import { StyleSheet, View, TouchableOpacity, Text } from "react-native";
-import { RightArrowIcon } from "../assets/icons";
+import { RightArrowIcon, SettingIcon } from "../assets/icons";
 
-const ProfileList = ({ onPress, text, icon }) => {
+const NotificationList = ({ text, onPress, icon }) => {
   return (
     <View>
       <TouchableOpacity
@@ -15,7 +15,7 @@ const ProfileList = ({ onPress, text, icon }) => {
           <View>{icon}</View>
           <Text style={styles.right}>{text}</Text>
         </View>
-
+        <SettingIcon />
         <RightArrowIcon />
       </TouchableOpacity>
     </View>
@@ -41,4 +41,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ProfileList;
+export default NotificationList;

@@ -1,3 +1,4 @@
+/** @format */
 import React from "react";
 import {
   StyleSheet,
@@ -42,7 +43,11 @@ const Profile = ({ navigation }) => {
         />
         <ProfileList
           text={"Notification Settings"}
-          onPress={() => {}}
+          onPress={() => {
+            navigation.navigate("ProfileStack", {
+              screen: "notification",
+            });
+          }}
           icon={<ProfileCircleIcon />}
         />
         <ProfileList
@@ -71,7 +76,7 @@ const styles = StyleSheet.create({
   profileImg: {
     height: 90,
     width: 90,
-    borderRadius: "50%",
+    borderRadius: 50,
     borderWidth: 2,
     borderColor: "white",
   },

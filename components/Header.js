@@ -1,5 +1,13 @@
+/** @format */
+
 import React from "react";
-import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
+import {
+  StyleSheet,
+  View,
+  Text,
+  TouchableOpacity,
+  Platform,
+} from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 const Header = ({ headerName, onPress }) => {
@@ -8,8 +16,7 @@ const Header = ({ headerName, onPress }) => {
       <TouchableOpacity
         activeOpacity={0.4}
         onPress={onPress}
-        style={styles.iconConatainer}
-      >
+        style={styles.iconConatainer}>
         <Ionicons name="arrow-back" size={25} color="black" />
       </TouchableOpacity>
       <View style={styles.textContainer}>
