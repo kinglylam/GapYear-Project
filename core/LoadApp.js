@@ -57,7 +57,7 @@ export default function LoadApp() {
     <>
       <GestureHandlerRootView style={{ flex: 1 }}>
         <NavigationContainer>
-          <AppNavigator />
+          <AuthNavigator />
         </NavigationContainer>
       </GestureHandlerRootView>
     </>
