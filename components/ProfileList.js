@@ -4,15 +4,15 @@ import { RightArrowIcon } from "../assets/icons";
 
 const ProfileList = ({ onPress, text, icon }) => {
   return (
-    <View style={{ flex: "row" }}>
+    <View>
       <TouchableOpacity
         activeOpacity={0.5}
         onPress={onPress}
         style={styles.container}
       >
-        <View style={{ flexDirection: "row", gap: 10 }}>
+        <View style={styles.leftSide}>
           <View>{icon}</View>
-          <Text style={{ color: "#3e238b", fontWeight: "500", fontSize: 17 }}>
+          <Text style={styles.leftSideText}>
             {text}
           </Text>
         </View>
@@ -31,6 +31,12 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     justifyContent: "space-between",
   },
+  leftSide:{
+    flexDirection: "row", gap: 10 
+  },
+  leftSideText:{
+    color: "#3e238b", fontWeight: "500", fontSize: 17
+  }
 });
 
 export default ProfileList;
