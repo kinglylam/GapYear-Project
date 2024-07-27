@@ -7,6 +7,7 @@ import {
 import OnboardingCarousel from "../../screen/Onboarding/Onboarding";
 import Profile from "../../screen/Profile/Profile";
 import SignIn from "../../screen/Auth/SignIn";
+import Welcome from "../../screen/Auth/Welcome";
 
 const { Group, Navigator, Screen } = createStackNavigator();
 
@@ -25,6 +26,7 @@ export default function AuthNavigator() {
       <Group>
         <Screen name="Onboarding" component={OnboardingCarousel} />
         <Screen name="SignIn" component={SignIn} />
+        <Screen name="Welcome" component={Welcome} />
       </Group>
     </Navigator>
   );

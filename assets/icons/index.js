@@ -8,3 +8,8 @@ export { default as GameIcon } from "./Games.svg";
 export { default as EditIcon } from "./edit.svg";
 export { default as RightArrowIcon } from "./arrow-right.svg";
 export { default as ProfileCircleIcon } from "./profile-circle.svg";
+export { default as MailIcon } from "./email.svg";
+export { default as GoogleIcon } from "./Google.svg";
+export { default as AppleIcon } from "./Apple Logo.svg";
+export { default as PasswordIcon } from "./key.svg";
+export { default as AttachCircleIcon } from "./attach-circle";

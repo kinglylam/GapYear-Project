@@ -39,7 +39,7 @@ const OnboardingCarousel = ({ navigation }) => {
         animated: true,
       });
     } else {
-      navigation.navigate("SignIn");
+      navigation.navigate("Welcome");
     }
   };
 
@@ -84,7 +84,7 @@ const OnboardingCarousel = ({ navigation }) => {
           </TouchableOpacity>
         )}
         <View style={styles.indicatorsContainer}>
-          {screens.map((_, i) => (
+          {screens.map((x, i) => (
             <View
               key={i}
               style={[
