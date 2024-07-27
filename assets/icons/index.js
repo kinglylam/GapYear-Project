@@ -26,3 +26,6 @@ export { default as Language } from "./Language.svg";
 export { default as Chemistry } from "./Chemistry.svg";
 export { default as Arithmetics } from "./AddCourse.svg";
 export { default as BigRightArrow } from "./BigArrow.svg";
+export { default as GameActive } from "./GameActive.svg";
+export { default as LibraryActive } from "./LibraryActive.svg";
+export { default as CoursesIcon } from "./courses.svg";

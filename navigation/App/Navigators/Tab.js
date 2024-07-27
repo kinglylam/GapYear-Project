@@ -19,7 +19,11 @@ import {
   HomeIcon,
   LibraryIcon,
   ProfileActiveIcon,
+  CoursesIcon,
   ProfileIcon,
+  GameActive,
+  CoursesActive,
+  LibraryActive,
 } from "../../../assets/icons";
 import DashBoard from "../../../screen/Home/DashBoard";
 import Play from "../../../screen/Play/Play";
@@ -105,7 +109,7 @@ export default function TabNavigator() {
               {focused ? (
                 <>
                   <View style={styles.active}>
-                    <LibraryIcon />
+                    <CoursesActive />
                     <Text style={styles.activeText} fontWeight="750">
                       Courses
                     </Text>
@@ -114,7 +118,7 @@ export default function TabNavigator() {
               ) : (
                 <>
                   <View style={styles.inactive}>
-                    <LibraryIcon />
+                    <CoursesIcon />
                     <Text style={styles.inactiveText}>Courses</Text>
                   </View>
                 </>
@@ -133,7 +137,7 @@ export default function TabNavigator() {
               {focused ? (
                 <>
                   <View style={styles.active}>
-                    <GameIcon />
+                    <GameActive />
                     <Text style={styles.activeText} fontWeight="750">
                       Games
                     </Text>
@@ -171,7 +175,7 @@ export default function TabNavigator() {
               {focused ? (
                 <>
                   <View style={styles.active}>
-                    <LibraryIcon />
+                    <LibraryActive />
                     <Text style={styles.activeText} fontWeight="750">
                       Library
                     </Text>

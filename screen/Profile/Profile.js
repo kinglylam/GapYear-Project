@@ -47,7 +47,11 @@ const Profile = ({ navigation }) => {
         />
         <ProfileList
           text={"Security Settings"}
-          onPress={() => {}}
+          onPress={() => {
+            navigation.navigate("ProfileStack", {
+              screen: "security-setting",
+            });
+          }}
           icon={<ProfileCircleIcon />}
         />
       </ScrollView>
@@ -71,7 +75,7 @@ const styles = StyleSheet.create({
   profileImg: {
     height: 90,
     width: 90,
-    
+
     borderWidth: 2,
     borderColor: "white",
   },
